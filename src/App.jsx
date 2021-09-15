@@ -18,7 +18,6 @@ function App() {
 </div>
 </div>
 <div className="col-9">
-
 <Route path="/profile" component={Profile}/>
 <Route path="/messages" component={Messages}/>
 <Route path="/settings" component={Settings}/>
