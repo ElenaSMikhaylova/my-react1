@@ -29,6 +29,7 @@ return (
 </div>
 </BrowserRouter>
 <div><h2>проверяю гит из вс</h2></div>
+<div><h2>проверяю гит из вс</h2></div>
 </div>
 
   );
