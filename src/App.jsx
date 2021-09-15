@@ -7,6 +7,7 @@ const Frends=()=>{return <h2> Друзья</h2>;};
 function App() {
 return (
 <div className="container-fluid">
+
 <BrowserRouter>
 <div className="row mt-5">
 <div className="col-3">
@@ -22,6 +23,7 @@ return (
 <Route path="/messages" component={Messages}/>
 <Route path="/settings" component={Settings}/>
 <Route path="/frends" component={Frends}/>
+
 
 </div>
 </div>
