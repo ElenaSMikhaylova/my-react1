@@ -5,7 +5,7 @@ const Settings=()=>{return <h2> Настройки</h2>;};
 const Frends=()=>{return <h2> Друзья</h2>;};
 
 function App() {
-  return (
+return (
 <div className="container-fluid">
 <BrowserRouter>
 <div className="row mt-5">
