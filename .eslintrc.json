@@ -6,7 +6,7 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/jsx-runtime"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -24,6 +24,10 @@
 "react/jsx-uses-react": 1,
 "react/jsx-uses-vars": "error",
 "react/prop-types": "off"
-
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
