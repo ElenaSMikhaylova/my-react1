@@ -12,7 +12,8 @@ const users={
    1: {name:"Вася", lastname:"Васильев"},
    2: {name:"Коля", lastname:"Николаев"},
    3: {name:"Ваня", lastname:"Иванов"},
-   4: {name:"Ольга", lastname:"Тетерина"}
+   4: {name:"Ольга", lastname:"Тетерина"},
+   5: {name:"Поля", lastname:"Тетерина"}
 }
 export function getUser(){
     return user;
