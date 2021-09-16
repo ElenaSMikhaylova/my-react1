@@ -6,7 +6,7 @@ const Settings=()=>{return <h2> Настройки</h2>;};
 
 
 function App(props) {
-  console.log(props);
+  //console.log(props);
 return (
 
 <div className="container-fluid">
