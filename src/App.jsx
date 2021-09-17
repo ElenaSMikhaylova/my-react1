@@ -15,10 +15,10 @@ return (
 <div className="row mt-5">
 <div className="col-3">
 <div className="nav flex-column nav-pills" id="v-pills-tab" >
-<NavLink className="nav-link" to="profile" >Профиль</NavLink>
-<NavLink className="nav-link"  to="messages" >Сообщения</NavLink>
-<NavLink className="nav-link"  to="settings">Настройки</NavLink>
-<NavLink className="nav-link " to="frends" >Мои друзья</NavLink>
+<NavLink className="nav-link" to="/profile" >Профиль</NavLink>
+<NavLink className="nav-link"  to="/messages" >Сообщения</NavLink>
+<NavLink className="nav-link"  to="/settings">Настройки</NavLink>
+<NavLink className="nav-link " to="/frends" >Мои друзья</NavLink>
 </div>
 </div>
 <div className="col-9">

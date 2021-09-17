@@ -5,15 +5,30 @@ const TableRow=(props)=>{return(
       <td>{props.name} {props.lastname}</td>
 </tr>);};
 
-const Frends=(props)=>{
-    let users=props.function();
-    let userCount=Object.keys(users).length;
-    let userRow=[];
+class Frends extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {userRow: []};
+  }
+  componentDidMount() {
+    this.props.function().then((users)=>{
+      console.log(users);
+      let userCount=users.length;
+      let userRow=[];
+  
+      for (let i=0; i<userCount; i++){
+           userRow.push(
+            <TableRow index={i} key={i} name={users[i].name} lastname={users[i].lastname}/>);
+      } 
+      this.setState({userRow: userRow});
+    });
+   /*  users.then(result=>(console.log(result))
+    ) */
 
-    for (let i=0; i<userCount; i++){
-        
-        userRow.push(<TableRow index={i} key={i} name={users[i].name} lastname={users[i].lastname}/>);
-    }
+  }
+
+
+  render(){
     return (
 <table className="table">
   <thead>
@@ -23,6 +38,7 @@ const Frends=(props)=>{
     
     </tr>
   </thead>
-  <tbody>{userRow}</tbody>
-</table>);};
+  <tbody>{this.state.userRow}</tbody>
+</table>);}}
+    
 export default Frends;
