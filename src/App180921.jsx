@@ -1,4 +1,4 @@
-import { HashRouter, NavLink, Route } from 'react-router-dom';
+import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 import Profile from './components/Profile';
 import Frends from './components/Frends';
 const Messages=()=>{return <h2> Сообщения</h2>;};
@@ -11,7 +11,7 @@ return (
 
 <div className="container-fluid">
 
-<HashRouter>
+<BrowserRouter>
 <div className="row mt-5">
 <div className="col-3">
 <div className="nav flex-column nav-pills" id="v-pills-tab" >
@@ -28,7 +28,7 @@ return (
 <Route path="/frends" render={() => <Frends function= {props.functions.key_getUsers}/>}/>
 </div>
 </div>
-</HashRouter>
+</BrowserRouter>
 </div>
 
   );
